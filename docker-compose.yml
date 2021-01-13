@@ -28,7 +28,7 @@ services:
             - "/run/docker.sock:/var/run/docker.sock:ro"
         environment:
             NGINX_PROXY_CONTAINER: "reverse-proxy"
-            DEFAULT_EMAIL: "user@domain.com"
+            DEFAULT_EMAIL: "dev@sintecsys.com"
         restart: "always"
         depends_on:
             - "reverse-proxy"
